@@ -1,2 +1,2 @@
 # Cursos
-Cursos de Física-Matemáticas
+Cursos de Física-Matemática
