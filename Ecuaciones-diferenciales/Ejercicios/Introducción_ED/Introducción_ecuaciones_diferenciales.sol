@@ -1,2 +1,0 @@
-\eqTopOfSolnPage
-\endinput
