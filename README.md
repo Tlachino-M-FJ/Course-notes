@@ -33,4 +33,4 @@ _These notes were made using  and Jupyter (Python and Wolfram Language)_
   * [Wolfram Language](https://www.wolfram.com/language/)
 * [LaTeX](https://www.latex-project.org/)
 
-## Thank you 🍻
+## ©️ Thank you 🍻
