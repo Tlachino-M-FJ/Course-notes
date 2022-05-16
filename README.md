@@ -14,13 +14,13 @@ https://www.wolframcloud.com/) is recommended._
 
 _For Python [Jupyter in your browser](https://jupyter.org/try-jupyter/lab/) or [Google Colab](https://colab.research.google.com/) is recommended._
 
-### Math
+### Math 🧮
 
 * Calculus
 * Differential equations
 * Linear algebra
 
-### Phisics
+### Phisics :atom:
 
 * theoretical mechanics
 
