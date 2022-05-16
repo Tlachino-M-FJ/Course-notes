@@ -1,0 +1,40 @@
+\documentclass[letterpaper,10p]{article}
+\usepackage[spanish]{babel} % Para escribir caracteres particulares del español (opción 1)
+\usepackage[utf8]{inputenc} % Para escribir caracteres particulares del español (opción 2)
+\usepackage{fullpage}
+
+%\usepackage{amsmath}
+\usepackage{hyperref} % Para agregar links
+\hypersetup{colorlinks=true,linkcolor=blue,filecolor=magenta,urlcolor=orange}
+\usepackage[nodirectory,navibar,pdftex]{web}
+
+\usepackage{eso-pic}
+\definecolor{mycolor}{rgb}{0.5,0,0.7}
+\AddToShipoutPicture{\hbox to \paperwidth{\hss\color{mycolor}\vrule width 1.5em height\paperheight}}%
+
+
+
+\university{\Large \color{mycolor}{Universidad Politécnica de Puebla} \color{green}{(\href{http://www.uppuebla.edu.mx/joomla1/}{UPPue})}}
+\title{\Large Ejercicios: Introducción a las ecuaciones diferenciales con la ayuda de software}
+\author{Felipe de Jesús Tlachino Macuitl
+	\href{mailto:felipe.tlachino459@uppuebla.edu.mx}{felipe.tlachino459@uppuebla.edu.mx}
+}
+
+\def\optionalpagematter{
+	\begin{itemize}
+		\item Comprobar las respuestas de los ejercicios: \textit{Introducción a las ecuaciones diferenciales} con \textbf{Wolfram Language} o \textbf{Python} (se recomienda utilizar \href{https://www.wolframcloud.com/}{Wolfram Cloud} o \href{https://colab.research.google.com/}{Google Colab}, respectivamente). Lo pueden realizar con otro software especializado o lenguaje de programación, con previa autorización del profesor.
+		\item Proponer un problema que se pueda expresar en forma de una ecuación diferencial:
+		\begin{enumerate}
+			\item Expresarlo de forma escrita.
+			\item Pasarlo a su forma matemática (ecuación diferencial)
+			\item Resolverlo con la ayuda de software.
+			\item Comentar el resultado obtenido (conclusiones).
+		\end{enumerate}
+	\end{itemize}
+}
+
+\begin{document}
+	
+	\maketitle
+	
+\end{document}

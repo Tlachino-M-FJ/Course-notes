@@ -1,0 +1,322 @@
+\documentclass[letterpaper,10p]{article}
+\usepackage[spanish]{babel} % Para escribir caracteres particulares del español (opción 1)
+\usepackage[utf8]{inputenc} % Para escribir caracteres particulares del español (opción 2)
+\usepackage{fullpage}
+
+\usepackage{amsmath}
+\usepackage{hyperref} % Para agregar links
+\hypersetup{colorlinks=true,linkcolor=blue,filecolor=magenta,urlcolor=orange}
+\usepackage[nodirectory,navibar,pdftex]{web}
+
+\usepackage{color}
+\usepackage[pdftex]{eforms}
+\usepackage[pdftex]{exerquiz}
+
+\usepackage{multicol}
+\usepackage{eso-pic}
+\definecolor{mycolor}{rgb}{0.5,0,0.7}
+\AddToShipoutPicture{\hbox to \paperwidth{\hss\color{mycolor}\vrule width 1.5em height\paperheight}}%
+
+%\navibarTextColor{white}
+%\navibarBgColor{mycolor}
+
+\useBeginQuizButton
+\useEndQuizButton
+
+\everymath{\displaystyle}
+
+
+\university{\Large \color{mycolor}{Universidad Politécnica de Puebla} \color{green}{(\href{http://www.uppuebla.edu.mx/joomla1/}{UPPue})}}
+\title{\Large Ejercicios: Introducción a las ecuaciones diferenciales}
+\author{Felipe de Jesús Tlachino Macuitl
+	\href{mailto:felipe.tlachino459@uppuebla.edu.mx}{felipe.tlachino459@uppuebla.edu.mx}
+}
+%\subject{Sample file}
+
+\def\optionalpagematter{
+	\begin{itemize}
+		\item Los ejercicios aquí planteados son para que practique lo visto en clase. El puntaje obtenido en este cuestionario no representara su calificación, para que sea valido deberá estar acompañado con las operaciones necesarias.
+		\item Los ejercicios se dividieron en tres secciones:
+		\begin{enumerate}
+			\item[i)] la primera corresponde a la identificación del tipo de ED
+			\item[ii)] el segundo en comprobar cual es la solución de una ED
+			\item[iii)] y la tercera en obtener la solución para un problema con condiciones iniciales o valores en la frontera.
+		\end{enumerate}
+		\item Para comenzar cada sección, siga las siguientes instrucciones:
+		\begin{enumerate}
+			\item Primero haga clic en ``Begin quizz''.
+			\item Marque las respuestas correctas y haga clic en ``End quizz'' (podrá ver el número de respuestas correctas).
+			\item Haga clic en ``Correct'' y verá las respuestas correctas
+		\end{enumerate}
+	\end{itemize}
+}
+
+\begin{document}
+	
+	\maketitle
+	\pagestyle{empty} % Remueve número de paginas
+	\quiztype{f}
+	
+	
+	\begin{quiz}{pronum1}{\textbf{i)} Identificar tipo de ecuación diferencial. Seleccione la respuesta que indique el tipo de ecuación diferencial correspondiente}
+		
+		\def\AnswerFieldDefaults
+		{\BC{}\S{N}\Ff{\FfReadOnly}}
+		\def\problem#1\par{\bigskip\begin{minipage}{\linewidth}\item #1\end{minipage}}
+		
+		\begin{questions}
+			
+			\problem{ $y'' + \cos(2x) y = x^2 $} %1
+			\begin{answers}{1}
+				\Ans1 Ordinaria de segundo orden, lineal y no homogénea.
+				\Ans0 Ordinaria de segundo orden, lineal y homogénea.
+				\Ans0 Ordinaria de segundo orden, no lineal.
+			\end{answers}
+
+			
+			\problem{ $y'' + 7x\sin(y) = \frac{1}{x}$} %2
+			\begin{answers}{1}
+				\Ans0 Ordinaria de segundo orden, lineal y no homogénea.
+				\Ans0 Ordinaria de segundo orden, lineal y homogénea.
+				\Ans1 Ordinaria de segundo orden, no lineal.
+			\end{answers}
+
+			
+			\problem{$\frac{\partial}{\partial t}[f(x, y, z, t)] = f(x, y, z, t)$}%3
+			\begin{answers}{1}
+				\Ans0 Ordinaria de primer orden, lineal y no homogénea.
+				\Ans1 Ordinaria de primer orden, lineal y homogénea.
+				\Ans0 Ordinaria de primer orden, no lineal.
+				\Ans0 Parcial de primer orden, lineal y homogénea.
+			\end{answers}
+
+			
+			\problem{$f\frac{d^3 f}{d t^3} + x^6 \frac{d^5 f}{d t^5} = g(t)$}%4
+			\begin{answers}{1}
+				\Ans0 Ordinaria de tercer orden, no lineal.
+				\Ans0 Ordinaria de quinto orden, lineal.
+				\Ans0 Ordinaria de sexto orden, lineal.
+				\Ans1 Ordinaria de quinto orden, no lineal.
+				\Ans0 Ordinaria de sexto orden, no lineal.
+			\end{answers}
+
+			
+			\problem{$\frac{d^2 f}{d t^2} = \tan{x}\frac{df}{d t}$}%5
+			\begin{answers}{1}
+				\Ans1 Ordinaria de segundo orden, lineal y homogénea.
+				\Ans0 Ordinaria de segundo orden, lineal y  no homogénea.
+				\Ans0 Ordinaria de segundo orden no lineal.
+			\end{answers}
+
+		
+			\problem{$y'''(x)=y(x)\sin(2x)-\sqrt{x}$}%6
+			\begin{answers}{1}
+				\Ans0 Ordinaria de tercer orden, lineal y homogénea.
+				\Ans1 Ordinaria de tercer orden, lineal y  no homogénea.
+				\Ans0 Ordinaria de tercer orden no lineal.
+			\end{answers}
+			
+		\end{questions}
+	\end{quiz}
+	\ScoreField\currQuiz\eqButton\currQuiz
+	
+	
+	\newpage
+	
+	
+	\begin{quiz}{pronum2}{\textbf{ii)} Dada la ecuación diferencial, indique que opción si es una solución}
+		
+		\def\AnswerFieldDefaults
+		{\BC{}\S{N}\Ff{\FfReadOnly}}
+		\def\problem#1\par{\bigskip\begin{minipage}{\linewidth}\item #1\end{minipage}}
+		
+		\begin{questions}
+			\begin{multicols}2
+				
+				\problem{$y'' = y-x^3$}%1
+				\begin{answers}{1}
+					\Ans0 $x^3 + x$
+					\Ans1 $x^3 + 6x$
+					\Ans0 $6x^3 + x$
+				\end{answers}
+			
+				
+				\problem{$y'(x)=y(x)-\cos(2x)$}%2
+				\begin{answers}{1}
+					\Ans1 $\frac{1}{5}(\cos(2x)-2\sin(2x))$
+					\Ans0 $\frac{1}{5}(\cos(2x)-\sin(2x))$
+					\Ans0 $\frac{1}{5}(2\cos(2x)-\sin(2x))$
+				\end{answers}
+			
+		
+				\problem{$y''(x)-4y(x)=0$}%3
+				\begin{answers}{1}
+					\Ans0 $e^{4x}$
+					\Ans1 $e^{2x}$
+					\Ans0 $e^{x/4}$
+				\end{answers}
+			
+		
+				\problem{$y''(x)-4y(x)=0$}%4
+				\begin{answers}{1}
+					\Ans0 $e^{4x}$
+					\Ans1 $c_1e^{2x}$
+					\Ans0 $e^{x/4}$
+				\end{answers}
+			
+
+				\problem{$y'(x)-y(x)=e^{2x})$}%5
+				\begin{answers}{1}
+					\Ans0 $e^{x^2}$
+					\Ans0 $e^{-2x}$
+					\Ans1 $e^{2x}$
+				\end{answers}
+			
+
+				\problem{$y'(x)-y(x)=7x^3-9$}%6
+				\begin{answers}{1}
+					\Ans0 $7x^3-21x^2-42x-33$
+					\Ans0 $-7x^3-21x^2-42x+33$
+					\Ans1 $-7x^3-21x^2-42x-33$
+				\end{answers}
+			
+
+				\problem{$y'(x)=y(x)\tan(x)$}%7
+				\begin{answers}{1}
+					\Ans1 $\sec(x)$
+					\Ans0 $\sen(x)$
+					\Ans0 $\csc(x)$
+				\end{answers}
+			
+
+				\problem{$y''(x)+y(x)=\sec(x)$}%8
+				\begin{answers}{1}
+					\Ans0 $-x\sin(x)+\cos(x)\log(\cos(x))$
+					\Ans0 $x\sin(x)-\cos(x)\log(\cos(x))$
+					\Ans1 $x\sin(x)+\cos(x)\log(\cos(x))$
+				\end{answers}
+			
+
+				\problem{$x^2y''(x)+xy'(x)+y(x)=0$}%9
+				\begin{answers}{1}
+					\Ans0 $\cos(\log(2x))$
+					\Ans1 $\cos(\log(x))$
+					\Ans0 $\cos(\log(x^2))$
+				\end{answers}
+			
+
+				\problem{$y''(x)+y(x)=2\cos(x)-2\sin(x)$}%10
+				\begin{answers}{1}
+					\Ans0 $x\cos(x) + \sin(x)$
+					\Ans1 $x\cos(x) + x\sin(x)$
+					\Ans0 $\cos(x) + x\sin(x)$
+				\end{answers}
+			
+		
+				\problem{$y'''(x) = y(x) - 2x$}%11
+				\begin{answers}{1}
+					\Ans1 $2x$
+					\Ans0 $x/2$
+					\Ans0 $x^2$
+				\end{answers}
+			
+
+				\problem{$y'(x) = y(x) - 2x$}%12
+				\begin{answers}{1}
+					\Ans0 $x+1$
+					\Ans1 $2(x+1)$
+					\Ans0 $2(x-1)$
+				\end{answers}
+			
+
+				\problem{$y''(x)=4y(x)-2x$}%13
+				\begin{answers}{1}
+					\Ans1 $x/2$
+					\Ans0 $2x$
+					\Ans0 $x$
+				\end{answers}
+			
+
+				\problem{$y''(x)=\sin(x)-y'(x)$}%14
+				\begin{answers}{1}
+					\Ans0 $-(\cos(x) + \sin(x))$
+					\Ans0 $-2(\cos(x) + \sin(x))$
+					\Ans1 $-(\cos(x) + \sin(x))/2$
+				\end{answers}
+				
+			\end{multicols}
+		\end{questions}
+	\end{quiz}
+	\ScoreField\currQuiz\eqButton\currQuiz
+	
+	
+	\newpage
+	
+	
+	\begin{quiz}{pronum3}{\textbf{iii)} En esta sección se da la solución a una ecuación diferencial y las condiciones iniciales (o valores en la frontera), debe obtener el valor de las constantes (no utilizar decimales), si no aparece $C_2$ darle valor igual a $0$, por ejemplo si obtiene $C_1 = -1/2$ y no aparece la constante $C_2$ deberá escribir como respuesta: $-1/2,$ $0$. En esta sección no se dan las respuestas.}
+	
+	\def\problem#1{\bigskip\item ${}$#1 \quad $C_1, C_2={}$}
+	\def\interval#1{\saveinterval#1}
+	\def\saveinterval[#1,#2]{\def\a{#1} \def\b{#1}}
+	\def\correctanswer#1{\RespBoxMath{#1}{5}{.0001}{[\a,\b]}\CorrAnsButton{#1}}	
+	
+	\def\CorrAnsButtonDefaults
+	{%
+		\CA{?}\W{1}\S{B}
+		\BC{0 0 0}\BG{.7529 .7529 .7529}\H{P}
+		\TU{Click to see the correct answer.}
+	}
+	
+	\begin{questions}
+		\problem{$y(x) = C_1 \cos(x), \,\,\ y(0) = 2:$}%1
+		\interval{[1,2]}\correctanswer{2, 0}
+		
+		\problem{$y(x) = - \frac{2}{5}\sin\left(\frac{x}{2}\right) + \frac{4}{5}\cos\left(\frac{x}{2}\right) + c_1e^x, \,\,\ y(0) = 0:$}%2
+		\interval{[1,2]}\correctanswer{-4/5, 0}
+		
+		\problem{$y(x) = -\frac{x^4}{12}+c_2x+c_1, \,\,\ y(0) = 0, y'(0) = 0:$}%3
+		\interval{[1,2]}\correctanswer{0, 0}
+		
+		\problem{$y(x) = -\frac{x^4}{12}+c_2x+c_1, \,\,\ y(0) = 1, y'(0) = 1:$}%4
+		\interval{[1,2]}\correctanswer{1, 1}
+		
+		\problem{$y(x) = 1+c_1e^{\frac{x^2}{2}}, \,\,\ y(0) = 0:$}%5
+		\interval{[1,2]}\correctanswer{-1, 0}
+		
+		\problem{$y(x) = \frac{x^3}{3}+x^2+2x+c_1e^x+c_2, \,\,\  y(0) = 0, y'(0) = 0:$}%6
+		\interval{[1,2]}\correctanswer{-2, 2}
+		
+		\problem{$y(x) = \frac{1}{4}\left(2x^3+3x^2+3x+2c_1e^{2x}\right)+c_2, \,\,\ y(0) = 0, y'(0) = 1:$}%7
+		\interval{[1,2]}\correctanswer{1/4, -1/8}
+		
+		\problem{$y(x) = -\frac{3x^4}{8}+\frac{c_1x^2}{2}+c_2, \,\,\ y(0) = -1, y(2) = 3:$}%8
+		\interval{[1,2]}\correctanswer{5, -1}
+		
+		\problem{$y(x) = \frac{c_1x^2}{2}+c_2, \,\,\ y(0) = 0,  y(2) = 4:$}%9
+		\interval{[1,2]}\correctanswer{2, 0}
+		
+		\problem{$y(x) = c_1e^{-3/x}, \,\,\ y(3) = 1:$}%10
+		\interval{[1,2]}\correctanswer{e, 0}
+		
+		\problem{$y(x) = 5x^2+c_1x^3, \,\,\ y(1) = 3:$}%11
+		\interval{[1,2]}\correctanswer{-2, 0}
+		
+		\problem{$y(x) = \frac{1}{26}(5\sin(x)+\cos(x))+c_1e^{5x}, \,\,\ y(0) = 0:$}%12
+		\interval{[1,2]}\correctanswer{-1/26, 0}
+		
+		\problem{$y(x) = C_1 \cos(x), \,\,\ y(0) = 0, y'(0) = 0:$}%13
+		\interval{[1,2]}\correctanswer{-1/4, 1/4}
+		
+		\problem{$y(x) = C_1 \cos(x), \,\,\ y(0) = 0, y'(0) = 2:$}%14
+		\interval{[1,2]}\correctanswer{3/4, -3/4}
+		
+		\problem{$y(x) = \frac{\cos(x)}{2}+c_1e^x+c_2e^{-x}, \,\,\ y(0) = 0, y'(0)=1:$}%15
+		\interval{[1,2]}\correctanswer{1/4, -3/4}
+		
+	\end{questions}
+\end{quiz}
+\ScoreField\currQuiz\eqButton\currQuiz
+
+%Answer: \AnswerField[\rectW{5cm}\textSize{0}]\currQuiz
+	
+\end{document}
