@@ -22,7 +22,7 @@ _For Python [Jupyter in your browser](https://jupyter.org/try-jupyter/lab/) or [
 
 ### Phisics :atom:
 
-* theoretical mechanics
+* Theoretical mechanics
 
 ## Built with 🛠️
 
