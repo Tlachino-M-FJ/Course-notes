@@ -1,8 +1,8 @@
 # <font color="purple"><big><b><i>Ecuaciones diferenciales</i></b></big></font>
 
-<img src="Frase-RF.png" width="870" align="left">
+<img src="Frase-RF.png" width="870">
 
-<small><b>Contenido</b></small>
+<b>Contenido</b>
 
 * <font color="orange"><b>Introducción a las ecuaciones diferenciales</b></font>
     
@@ -14,7 +14,7 @@
     
 * <font color="orange"><b>Sistemas de ecuaciones diferenciales</b></font>
 
-<small><b>Bibliografia</b></small>
+<b>Bibliografia</b>
 
 <small> $ \quad\ [1] \quad\ $    Zill, D. G., Cullen, M. R., Hernández, A. E. G., & López, E. F. (2002). Ecuaciones diferenciales con problemas de valores en la frontera. Thomson.
 
