@@ -4,15 +4,15 @@
 
 <b>Contenido</b>
 
-* <font color="orange"><b>Introducción a las ecuaciones diferenciales</b></font>
+* [Introducción a las ecuaciones diferenciales](https://github.com/Tlachino-M-FJ/Course-notes/blob/main/Ecuaciones-diferenciales/Introducci%C3%B3n_Ecuaciones_Diferenciales.ipynb)
     
-* <font color="orange"><b>Ecuaciones diferenciales ordinarias de primer orden</b></font>
+* [Ecuaciones diferenciales ordinarias de primer orden](https://github.com/Tlachino-M-FJ/Course-notes/blob/main/Ecuaciones-diferenciales/EDO_Primer_Orden.ipynb)
     
-* <font color="orange"><b>Ecuaciones diferenciales ordinarias de orden superior</b></font>
+* [Ecuaciones diferenciales ordinarias de orden superior](https://github.com/Tlachino-M-FJ/Course-notes/blob/main/Ecuaciones-diferenciales/EDO_Orden%20_Superior.ipynb)
     
-* <font color="orange"><b>Transformada de Laplace</b></font>
+* Transformada de Laplace
     
-* <font color="orange"><b>Sistemas de ecuaciones diferenciales</b></font>
+* Sistemas de ecuaciones diferenciales
 
 <b>Bibliografia</b>
 
