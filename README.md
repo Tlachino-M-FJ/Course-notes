@@ -17,7 +17,7 @@ _For Python [Jupyter in your browser](https://jupyter.org/try-jupyter/lab/) or [
 ### Math 🧮
 
 * Calculus
-* Differential equations
+* [Differential equations](https://github.com/Tlachino-M-FJ/Course-notes/tree/main/Ecuaciones-diferenciales)
 * Linear algebra
 
 ### Phisics :atom:
