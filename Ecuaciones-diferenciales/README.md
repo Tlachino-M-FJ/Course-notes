@@ -4,11 +4,11 @@
 
 <b>Contenido</b>
 
-* [Introducción a las ecuaciones diferenciales](https://github.com/Tlachino-M-FJ/Course-notes/blob/main/Ecuaciones-diferenciales/Introducci%C3%B3n_Ecuaciones_Diferenciales.ipynb)
+* [Introducción a las ecuaciones diferenciales](https://github.com/Tlachino-M-FJ/Course-notes/blob/main/Ecuaciones-diferenciales/U1_Introducci%C3%B3n_ED.ipynb)
     
-* [Ecuaciones diferenciales ordinarias de primer orden](https://github.com/Tlachino-M-FJ/Course-notes/blob/main/Ecuaciones-diferenciales/EDO_Primer_Orden.ipynb)
+* [Ecuaciones diferenciales ordinarias de primer orden](https://github.com/Tlachino-M-FJ/Course-notes/blob/main/Ecuaciones-diferenciales/U2_EDO_de_primer_orden.ipynb)
     
-* [Ecuaciones diferenciales ordinarias de orden superior](https://github.com/Tlachino-M-FJ/Course-notes/blob/main/Ecuaciones-diferenciales/EDO_Orden%20_Superior.ipynb)
+* [Ecuaciones diferenciales ordinarias de orden superior](https://github.com/Tlachino-M-FJ/Course-notes/blob/main/Ecuaciones-diferenciales/U3_EDO_de_orden_superior.ipynb)
     
 * Transformada de Laplace
     
