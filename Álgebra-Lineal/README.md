@@ -22,4 +22,4 @@
 
 <small> [3]   Grossman, S. I. (2008). Álgebra lineal. McGraw Hill Educación.
   
-<small> [4]   [Álgebra Lineal, Wolfram Alpha](https://es.wolframalpha.com/examples/mathematics/linear-algebra)
+<small> [4]   [Linear Algebr, Wolfram Language & System Documentation Center](https://reference.wolfram.com/language/tutorial/LinearAlgebra.html)
