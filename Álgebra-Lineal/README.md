@@ -4,7 +4,7 @@
 
 <b>Contenido</b>
 
-* [Introducción]()
+* [Introducción](https://github.com/Tlachino-M-FJ/Course-notes/blob/main/%C3%81lgebra-Lineal/Introducci%C3%B3n.ipynb)
     
 * [Matrices y Ecuaciones Lineales]()
     
