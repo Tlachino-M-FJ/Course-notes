@@ -1,6 +1,6 @@
 # <font color="purple"><big><b><i>Álgebra Lineal</i></b></big></font>
 
-<img src="Frase-RF.png" width="870">
+<img src="Frase-SH.png" width="870">
 
 <b>Contenido</b>
 
