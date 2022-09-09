@@ -16,9 +16,9 @@
 
 <b>Bibliografia</b>
 
-<small> $ \quad\ [1] \quad\ $    Zill, D. G., Cullen, M. R., Hernández, A. E. G., & López, E. F. (2002). Ecuaciones diferenciales con problemas de valores en la frontera. Thomson.
+<small> [1]    Zill, D. G., Cullen, M. R., Hernández, A. E. G., & López, E. F. (2002). Ecuaciones diferenciales con problemas de valores en la frontera. Thomson.
 
-<small> $ \quad\ [2] \quad\ $    Abell, M. L., & Braselton, J. P. (2022). Differential equations with Mathematica. Academic Press.
+<small> [2]    Abell, M. L., & Braselton, J. P. (2022). Differential equations with Mathematica. Academic Press.
 
-<small> $ \quad\ [3] \quad\ $    [Wolfram Language & System
+<small> [3]    [Wolfram Language & System
 Documentation Center](https://reference.wolfram.com/language/?source=nav)
