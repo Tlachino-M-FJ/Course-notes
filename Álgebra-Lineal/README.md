@@ -6,7 +6,7 @@
 
 * [Introducción](https://github.com/Tlachino-M-FJ/Course-notes/blob/main/%C3%81lgebra-Lineal/Introducci%C3%B3n.ipynb)
     
-* [Matrices y Ecuaciones Lineales]()
+* [Matrices y Ecuaciones Lineales](https://github.com/Tlachino-M-FJ/Course-notes/blob/main/Matrices_y_Ecuaciones_Lineales_Wolfram.ipynb)
     
 * [Espacios Vectoriales]()
     
